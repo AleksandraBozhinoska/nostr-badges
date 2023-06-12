@@ -15,5 +15,5 @@ export const setRelayConfig = (req: Request, res: Response): void => {
     }
 
     config.relays = reqBody
-    res.send('Response')
+    res.send()
 }

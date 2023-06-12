@@ -112,11 +112,15 @@ server.get('/badge-accepted/:pk', checkRelays, cache(CACHE_DURATION), getBadgesA
 /**
  * Returns list of badge award events awarded to any pk.
  * The event models are extended to contain boolean property indicating whether the badge was accepted by the receiver.
+ * Accepts numeric query parameters since and until, to only fetch subset of the data.
+ * Since and until are integer unix timestamps.
  */
 server.get('/badge-award', checkRelays, cache(CACHE_DURATION), getAllBadgesGiven)
 
 /**
  * Returns list of badge award events awarded and accepted by any pk.
+ * Accepts numeric query parameters since and until, to only fetch subset of the data.
+ * Since and until are integer unix timestamps.
  */
 server.get('/badge-accepted', checkRelays, cache(CACHE_DURATION), getAllBadgesAccepted)
 

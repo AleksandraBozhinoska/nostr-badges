@@ -30,7 +30,7 @@ export const fromEvent = (event: Event, accepted: boolean): ExtendedEvent => {
 export const config: Config = {
     relays: []
     // hardcoded for simplicity of testing, test.test.io is a dummy relay address
-    // relays: ['wss://relay.damus.io', 'wss://test.test.io', 'wss://nostr-relay.freedomnode.com']
+    // relays: ['wss://relay.damus.io', 'wss://test.test.io', 'wss://relay.1bps.io']
 }
 
 // hardcoded for simplicity of testing, meant to be replaced by valid key values
